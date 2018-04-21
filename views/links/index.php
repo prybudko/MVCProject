@@ -7,25 +7,12 @@
     <meta name="author" content="Prybudko / Design by: First Light Web Design - http://www.firstlightwebdesign.com/"/>
     <title>MVCProject</title>
     <link rel="stylesheet" href="http://mvcproject/MVCProject/views/style/style.css" type="text/css"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $("#Form").submit(function () {
-                var city = document.getElementById("CitySearch").value;
-                location.href = "http://mvcproject/MVCProject/weather/" + city;
-                return false;
-            });
-        });
-    </script>
 </head>
 
 <body>
 <div id="container">
-    <div id="header"><img id="logo" style="width: 65px; height: 100px;" alt="Your Logo" src="http://mvcproject/MVCProject/views/style/images/logo.jpg"/>
-        <form id="Form">
-            <div id="City"><input id="CitySearch" class="text" maxlength="64" name="keywords" type="text"/>
-                <input class="submit" value="Search" type="submit"/></div>
-        </form>
+    <div id="header"><img id="logo" style="width: 65px; height: 100px;" alt="Your Logo"
+                          src="http://mvcproject/MVCProject/views/style/images/logo.jpg"/>
         <!--Add your site name and slogan here.-->
         <h1>MVC Project</h1>
         <h2>Using news and weather APIs </h2>
@@ -33,10 +20,10 @@
     <!--Begin main navigation menu.-->
     <div id="menu">
         <ul>
-            <li><a  class="first" href="http://mvcproject/MVCProject/">Home</a></li>
+            <li><a class="first" href="http://mvcproject/MVCProject/">Home</a></li>
             <li><a href="http://mvcproject/MVCProject/news">News</a></li>
-            <li><a id="selected">Weather</a></li>
-            <li><a class="last" href="http://mvcproject/MVCProject/links">Links</a></li>
+            <li><a href="http://mvcproject/MVCProject/weather">Weather</a></li>
+            <li><a id="selected" class="last">Links</a></li>
         </ul>
     </div>
     <!--End main navigation menu.-->
@@ -56,30 +43,30 @@
             development.</p>
     </div>
     <!--Place your main content within the following division-->
-    <div id="leftcolumn">
-        <div class="divider2">
-        </div>
-        <h4><span class="date"></span></h4>
-        <p class="justify">
-            <?=$weather['summary'];?><br>
-            <?=$weather['timezone'];?><br>
-            <?=$weather['icon'];?><br>
-            <?=$weather['temperature'];?><br>
-            <?=$weather['pressure'];?><br>
+    <div>
+        <p class="home">The following APIs were used in this project:
+        <ul class="home">
+            <li><a target="_blank" href="https://newsapi.org/">News API</a></li>
+            <li><a target="_blank" href="https://developers.google.com/maps/?hl=ru">Google Maps API</a></li>
+            <li><a target="_blank" href="https://darksky.net/dev">Dark Sky API</a></li>
+        </ul>
         </p>
+        <p class="home">Also you can see the source code of the project
+            <a target="_blank" href="https://github.com/prybudko/MVCProject">here</a>.</p>
     </div>
-
     <!--Place additional secondary content in the next division.-->
 
     <!--The following division should remain empty.-->
     <div class="divider"></div>
     <div id="footer">
-        <p>Copyright © 2018 MVCProject. All rights reserved. Design by <a href="http://www.firstlightwebdesign.com">First Light</a>.</p>
+        <p>Copyright © 2018 MVCProject. All rights reserved. Design by <a href="http://www.firstlightwebdesign.com">First
+                Light</a>.</p>
     </div>
 </div>
 <div style="font-size: 0.8em; text-align: center; margin-top: 1em; margin-bottom: 1em;">
     Design downloaded from <a href="http://www.freewebtemplates.com/">Free
-        Templates</a> - your source for free web templates<br />
+        Templates</a> - your source for free web templates<br/>
     Supported by <a href="http://www.hosting24.com/" target="_blank">Hosting24.com</a>
 </div>
-</body></html>
+</body>
+</html>

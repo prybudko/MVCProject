@@ -1,12 +1,12 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta name="description" content="Place your page description here." />
-<meta name="keywords" content="put,your,key words,phrases,here" />
-<meta name="author" content="Your Name / Design by: First Light Web Design - http://www.firstlightwebdesign.com/" /><title>Leonardo</title>
-
-<link rel="stylesheet" href="http://mvcproject/MVCProject/views/style/style.css" type="text/css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="description" content="This site will help keep track of the latest news and weather changes in cities."/>
+    <meta name="keywords" content="mvc,api,weather,news,maps"/>
+    <meta name="author" content="Prybudko / Design by: First Light Web Design - http://www.firstlightwebdesign.com/"/>
+    <title>MVCProject</title>
+    <link rel="stylesheet" href="http://mvcproject/MVCProject/views/style/style.css" type="text/css"/>
 </head>
 
 <body>
@@ -22,7 +22,7 @@
 <li><a  class="first" href="http://mvcproject/MVCProject/">Home</a></li>
 <li><a id="selected" >News</a></li>
 <li><a href="http://mvcproject/MVCProject/weather">Weather</a></li>
-<li><a class="last" href="#">Links</a></li>
+<li><a class="last" href="http://mvcproject/MVCProject/links">Links</a></li>
 </ul>
 </div>
 <!--End main navigation menu.-->

@@ -4,5 +4,6 @@ return array(
     'news' => 'news/index',
     'weather/([A-Za-z]+)' => 'weather/weather/$1',
     'weather' => 'weather/list',
+    'links' => 'links/links',
     ''=>'home/start',
 );
