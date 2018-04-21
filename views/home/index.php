@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="description" content="This site will help keep track of the latest news and weather changes in cities."/>
+    <meta name="description"
+          content="This site will help keep track of the latest news and weather changes in cities."/>
     <meta name="keywords" content="mvc,api,weather,news,maps"/>
     <meta name="author" content="Prybudko / Design by: First Light Web Design - http://www.firstlightwebdesign.com/"/>
     <title>MVCProject</title>
@@ -59,12 +60,12 @@
     <!--The following division should remain empty.-->
     <div class="divider"></div>
     <div id="footer">
-        <p>Copyright © 2018 MVCProject. All rights reserved. Design by <a href="http://www.firstlightwebdesign.com">First
-                Light</a>.</p>
+        <p>Copyright © 2018 MVCProject. All rights reserved. Design by First
+            Light</a>.</p>
     </div>
 </div>
 <div style="font-size: 0.8em; text-align: center; margin-top: 1em; margin-bottom: 1em;">
-    Design downloaded from <a href="http://www.freewebtemplates.com/">Free
+    Design downloaded from <a target="_blank" href="http://www.freewebtemplates.com/">Free
         Templates</a> - your source for free web templates<br/>
     Supported by <a href="http://www.hosting24.com/" target="_blank">Hosting24.com</a>
 </div>

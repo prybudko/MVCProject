@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="description" content="This site will help keep track of the latest news and weather changes in cities."/>
+    <meta name="description"
+          content="This site will help keep track of the latest news and weather changes in cities."/>
     <meta name="keywords" content="mvc,api,weather,news,maps"/>
     <meta name="author" content="Prybudko / Design by: First Light Web Design - http://www.firstlightwebdesign.com/"/>
     <title>MVCProject</title>
@@ -21,7 +22,8 @@
 
 <body>
 <div id="container">
-    <div id="header"><img id="logo" style="width: 65px; height: 100px;" alt="Your Logo" src="http://mvcproject/MVCProject/views/style/images/logo.jpg"/>
+    <div id="header"><img id="logo" style="width: 65px; height: 100px;" alt="Your Logo"
+                          src="http://mvcproject/MVCProject/views/style/images/logo.jpg"/>
         <form id="Form">
             <div id="City"><input id="CitySearch" class="text" maxlength="64" name="keywords" type="text"/>
                 <input class="submit" value="Search" type="submit"/></div>
@@ -33,7 +35,7 @@
     <!--Begin main navigation menu.-->
     <div id="menu">
         <ul>
-            <li><a  class="first" href="http://mvcproject/MVCProject/">Home</a></li>
+            <li><a class="first" href="http://mvcproject/MVCProject/">Home</a></li>
             <li><a href="http://mvcproject/MVCProject/news">News</a></li>
             <li><a id="selected">Weather</a></li>
             <li><a class="last" href="http://mvcproject/MVCProject/links">Links</a></li>
@@ -61,12 +63,19 @@
         </div>
         <h4><span class="date"></span></h4>
         <p class="justify">
-            <?=$weather['summary'];?><br>
-            <?=$weather['timezone'];?><br>
-            <?=$weather['icon'];?><br>
-            <?=$weather['temperature'];?><br>
-            <?=$weather['pressure'];?><br>
+            <?php if (!isset($weather['error'])): ?>
+        <h4>Weather in <?= $weather['timezone']; ?></h4>
+        <ul class="home">
+            <li>Summary: <?= $weather['summary']; ?></li>
+            <li>Temperature: <?= $weather['temperature']; ?>°C</li>
+            <li>Visibility: <?= $weather['visibility']; ?>km</li>
+            <li>Wind Speed: <?= $weather['windSpeed']; ?>m/s</li>
+        </ul>
+        <?php else: ?>
+            <h4><?= $weather['error']; ?></h4>
+        <?php endif; ?>
         </p>
+
     </div>
 
     <!--Place additional secondary content in the next division.-->
@@ -74,12 +83,14 @@
     <!--The following division should remain empty.-->
     <div class="divider"></div>
     <div id="footer">
-        <p>Copyright © 2018 MVCProject. All rights reserved. Design by <a href="http://www.firstlightwebdesign.com">First Light</a>.</p>
+        <p>Copyright © 2018 MVCProject. All rights reserved. Design by <a href="http://www.firstlightwebdesign.com">First
+                Light</a>.</p>
     </div>
 </div>
 <div style="font-size: 0.8em; text-align: center; margin-top: 1em; margin-bottom: 1em;">
-    Design downloaded from <a href="http://www.freewebtemplates.com/">Free
-        Templates</a> - your source for free web templates<br />
+    Design downloaded from <a target="_blank" href="http://www.freewebtemplates.com/">Free
+        Templates</a> - your source for free web templates<br/>
     Supported by <a href="http://www.hosting24.com/" target="_blank">Hosting24.com</a>
 </div>
-</body></html>
+</body>
+</html>

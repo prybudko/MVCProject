@@ -3,6 +3,7 @@
 class News
 {
     private static $body;
+
     public static function getConnect()
     {
         $url = "https://newsapi.org/v2/everything?sources=bbc-news&apiKey=7d0ded37b2954b71b0d425bac7be2915";
@@ -23,7 +24,7 @@ class News
         $newsArray = self::getListNews();
         $oneNews = array();
         foreach ($newsArray as $item) {
-            if ($item['id'] == $id){
+            if ($item['id'] == $id) {
                 $oneNews = $item;
             }
         }
@@ -32,12 +33,12 @@ class News
 
     public static function getListNews()
     {
-       $body = self::getConnect();
-       $json = json_decode($body, true);
-       unset($json['status']);
-       unset($json['totalResults']);
-       $newsArray = array();
-       $id = 0;
+        $body = self::getConnect();
+        $json = json_decode($body, true);
+        unset($json['status']);
+        unset($json['totalResults']);
+        $newsArray = array();
+        $id = 0;
         foreach ($json as $articles => $numberOfArticles) {
             foreach ($numberOfArticles as $source => $value) {
                 $newsArray1['id'] = $id;
@@ -50,7 +51,7 @@ class News
                 $newsArray[] = $newsArray1;
                 $id++;
             }
-       }
+        }
         return $newsArray;
     }
 

@@ -332,15 +332,17 @@ p.featured {
     background: #E7EAEB url(images/gradient.jpg) repeat-x;
     color: #334755;
 }
+
 .home {
     font-size: 16px;
     margin-bottom: 0.1%;
     margin-left: 1%;
-    margin-right: 40%;
+    margin-right: 20%;
     text-indent: 20px;
 }
+
 ul {
     padding: 0;
     margin-left: 0;
-    list-style-position:inside;
+    list-style-position: inside;
 }

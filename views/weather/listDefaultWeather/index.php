@@ -1,12 +1,13 @@
 <!doctype html>
 <html lang="en">
 <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <meta name="description" content="This site will help keep track of the latest news and weather changes in cities."/>
-        <meta name="keywords" content="mvc,api,weather,news,maps"/>
-        <meta name="author" content="Prybudko / Design by: First Light Web Design - http://www.firstlightwebdesign.com/"/>
-        <title>MVCProject</title>
-        <link rel="stylesheet" href="http://mvcproject/MVCProject/views/style/style.css" type="text/css"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="description"
+          content="This site will help keep track of the latest news and weather changes in cities."/>
+    <meta name="keywords" content="mvc,api,weather,news,maps"/>
+    <meta name="author" content="Prybudko / Design by: First Light Web Design - http://www.firstlightwebdesign.com/"/>
+    <title>MVCProject</title>
+    <link rel="stylesheet" href="http://mvcproject/MVCProject/views/style/style.css" type="text/css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
@@ -34,7 +35,7 @@
     <!--Begin main navigation menu.-->
     <div id="menu">
         <ul>
-            <li><a  class="first" href="http://mvcproject/MVCProject/">Home</a></li>
+            <li><a class="first" href="http://mvcproject/MVCProject/">Home</a></li>
             <li><a href="http://mvcproject/MVCProject/news">News</a></li>
             <li><a id="selected">Weather</a></li>
             <li><a class="last" href="http://mvcproject/MVCProject/links">Links</a></li>
@@ -63,11 +64,13 @@
         </div>
         <h4><span class="date"></span></h4>
         <p class="justify">
-            <?= $defaultWeather['summary']; ?><br>
-            <?= $defaultWeather['timezone']; ?><br>
-            <?= $defaultWeather['icon']; ?><br>
-            <?= $defaultWeather['temperature']; ?><br>
-            <?= $defaultWeather['pressure']; ?><br>
+        <h4>Weather in <?= $defaultWeather['timezone']; ?></h4>
+        <ul class="home">
+            <li>Summary: <?= $defaultWeather['summary']; ?></li>
+            <li>Temperature: <?= $defaultWeather['temperature']; ?>°C</li>
+            <li>Visibility: <?= $defaultWeather['visibility']; ?>km</li>
+            <li>Wind Speed: <?= $defaultWeather['windSpeed']; ?>m/s</li>
+        </ul>
         </p>
     </div>
 
@@ -76,12 +79,14 @@
     <!--The following division should remain empty.-->
     <div class="divider"></div>
     <div id="footer">
-        <p>Copyright © 2018 MVCProject. All rights reserved. Design by <a href="http://www.firstlightwebdesign.com">First Light</a>.</p>
+        <p>Copyright © 2018 MVCProject. All rights reserved. Design by <a href="http://www.firstlightwebdesign.com">First
+                Light</a>.</p>
     </div>
 </div>
 <div style="font-size: 0.8em; text-align: center; margin-top: 1em; margin-bottom: 1em;">
-    Design downloaded from <a href="http://www.freewebtemplates.com/">Free
-        Templates</a> - your source for free web templates<br />
+    Design downloaded from <a target="_blank" href="http://www.freewebtemplates.com/">Free
+        Templates</a> - your source for free web templates<br/>
     Supported by <a href="http://www.hosting24.com/" target="_blank">Hosting24.com</a>
 </div>
-</body></html>
+</body>
+</html>
