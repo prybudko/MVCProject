@@ -30,19 +30,16 @@
 <div class="divider"></div>
     <div id="rightcolumn">
         <h5><span class="date">18 April 2018</span>Headline</h5>
-        <p class="justify">Nihil cum amicitia possum comparare; di
-            hominibus nihil melius dant. Pecuniam alii malunt alii corpora sana
-            alii famam.<br />
-            <a href="#">Learn more . . .</a></p>
+        <p class="justify">In computer programming, an application programming interface (API) is a set of subroutine
+            definitions, protocols, and tools for building application software. <br/>
+            <a target="_blank" href="https://www.mulesoft.com/resources/api/what-is-an-api">Learn more . . .</a></p>
 
-        <h6>Featured</h6>
-        <p class="featured">Tu autem cum orabis, intra in
-            cubiculum tuum et, clauso ostio tuo, ora Patrem tuum in abscondito; et
-            Pater tuus qui videt in abscondito reddet tibi . . . Sic ergo vos
-            orabitis: Pater noster qui es in caelis, sanctificetur nomen tuum;
-            adveniat regnum tuum; fiat voluntas tua sicut in caelo et in terra.
-            Venit iam magna aetas nova; de caelo mittitur puer, qui vitam deorum
-            habebit deosque videbit et ipse videbitur ab allis.</p>
+        <h6>MVC concept</h6>
+        <p class="featured">Model–view–controller (MVC) - is an architectural pattern commonly used for developing user
+            interfaces that divides an application into three interconnected parts. This is done to separate internal
+            representations of information from the ways information is presented to and accepted from the user.[1][2]
+            The MVC design pattern decouples these major components allowing for efficient code reuse and parallel
+            development.</p>
     </div>
 <!--Place your main content within the following division-->
 <?php foreach ($newsList as $item):?>
