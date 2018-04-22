@@ -1,0 +1,3 @@
+This site will help keep track of the latest news and weather changes in cities. The site is written using the concept of the MVC. To get the news, News API was used. To get the weather in the city to begin with, it was necessary to find out the coordinates of the requested city. To do this, we used Google Maps API. The obtained values of the coordinates were transmitted in the query to the Dark Sky API.
+
+The idea of creating this site was to demonstrate the ability to work with various APIs with the possibility of implementing the concept of MVC.

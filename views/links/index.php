@@ -60,8 +60,8 @@
     <!--The following division should remain empty.-->
     <div class="divider"></div>
     <div id="footer">
-        <p>Copyright © 2018 MVCProject. All rights reserved. Design by <a href="http://www.firstlightwebdesign.com">First
-                Light</a>.</p>
+        <p>Copyright © 2018 MVCProject. All rights reserved. Design by First
+                Light.</p>
     </div>
 </div>
 <div style="font-size: 0.8em; text-align: center; margin-top: 1em; margin-bottom: 1em;">
